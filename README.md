@@ -83,7 +83,7 @@ Pada tahapan ini, akan dibangun model yang dapat memprediksi indikasi penyebab r
 Terlihat bahwa model Gradient Boosting menunjukkan hasil yang baik, dengan akurasi 94,83% dengan keakurasian 94,80%. Kemampuan prediksi dan keakuratannya dalam mengidentifikasi potensi pengunduran diri menjadikannya model yang direkomendasikan untuk prediksi retensi karyawan. Lalu dilakukan analisis Cross-Validation dan Hyperparameter Tuning, dimana model mengalami fine-tuning, menampilkan metrik kinerja yang cukup baik dengan:
 - Rerata Precision: 0,97
 - Rerata Recall: 0,96
-- Rerata ROC-AUC: 0.97
+- Rerata ROC-AUC: 0.97<br>
 ![image](https://github.com/user-attachments/assets/d93b3c22-ffed-40b5-b20e-f3091d04a080)<br>
 Gambar disamping merupakan confusion matrix dengan pengoptimalkan hiperparameter yang menghasilkan skor AUC yang sempurna, 1.00. Pilihan hiperparameter dan skor ROC-AUC yang dihasilkan menggarisbawahi kemampuan kuat model untuk membedakan antara kasus positif dan negatif dengan diskriminasi sempurna. Hiperparameter terbaik untuk model termasuk Learning Rate: 0.01, Max Depth: 4, Min Samples Leaf: 5, Min Samples Split: 3, Number of Estimators: 50, dan Subsample: 0.8
 ![image](https://github.com/user-attachments/assets/bb0cfd09-6de8-41e7-8335-b9ad80fb6090)<br>
