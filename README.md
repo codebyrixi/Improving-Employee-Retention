@@ -6,7 +6,7 @@ Project ini merupakan project yang bertujuan untuk meningkatkan retensi karyawan
 - Laporan Tahunan Perubahan Jumlah Karyawan
 - Analisis Alasan Mengundurkan Diri Untuk Strategi Manajemen Attrusi Karyawan
 - Membangun Prediksi Perilaku Pengunduran Diri Otomatis Menggunakan _Machine Learning_
--
+- Menyajikan Hasil _Machine Learning_ kepada Pengguna Bisnis
 
 ## Bagian 0: Pendahuluan
 **1. Background** <br>
@@ -84,3 +84,14 @@ Terlihat bahwa model Gradient Boosting menunjukkan hasil yang baik, dengan akura
 - Rerata Precision: 0,97
 - Rerata Recall: 0,96
 - Rerata ROC-AUC: 0.97
+![image](https://github.com/user-attachments/assets/d93b3c22-ffed-40b5-b20e-f3091d04a080)<br>
+Gambar disamping merupakan confusion matrix dengan pengoptimalkan hiperparameter yang menghasilkan skor AUC yang sempurna, 1.00. Pilihan hiperparameter dan skor ROC-AUC yang dihasilkan menggarisbawahi kemampuan kuat model untuk membedakan antara kasus positif dan negatif dengan diskriminasi sempurna. Hiperparameter terbaik untuk model termasuk Learning Rate: 0.01, Max Depth: 4, Min Samples Leaf: 5, Min Samples Split: 3, Number of Estimators: 50, dan Subsample: 0.8
+![image](https://github.com/user-attachments/assets/bb0cfd09-6de8-41e7-8335-b9ad80fb6090)<br>
+Selanjutnya, akan dilakukan analisis _feature importance_, dimana terlihat bahwa pentingnya fitur `AlasanResign` menunjukkan bahwa alasan khusus yang diberikan karyawan untuk pengunduran diri mereka memberikan peran penting dalam _feature importance_ ini. Selain itu, pentingnya fitur `AsalKota_JakartaSelatan` menyiratkan bahwa letak geografis asal-usul karyawan merupakan faktor lainnya yang patut menjadi perhatian.
+![image](https://github.com/user-attachments/assets/853ddd7f-3cf4-4764-9209-8922d8cc21eb)<br>
+Lalu, setelah dilakukannya analisis kurva ROC (_Receiver Operating Curve_), terlihat bahwa Kurva ROC untuk model mencapai area luar biasa di bawah kurva (AUC) 0,99, yang berarti model memiliki kemampuan tinggi untuk membedakan antara karyawan yang kemungkinan akan mengundurkan diri dan mereka yang kemungkinan akan tinggal. Nilai AUC yang tinggi ini merupakan tanda yang menjanjikan bahwa model ini efektif dalam mengidentifikasi potensi pengunduran diri, yang dapat sangat berharga untuk strategi retensi karyawan.
+
+## Bagian 5: Menyajikan Hasil _Machine Learning_ kepada Pengguna Bisnis
+Selanjutnya, dibawah ini ditunjukkan plot SHAP Values dengan menggunakan Gradient Boosting (kiri) dan Neural Network (kanan)
+![image](https://github.com/user-attachments/assets/8051b0a3-8840-4540-8e7c-fad874684719)<br>
+Baik model Gradient Boosting dan Neural Network memperlihatkan pentingnya faktor-faktor seperti alasan resign dan usia karyawan sebagai penentu retensi karyawan. Alasan pengunduran diri harus dipantau dengan ketat, dan masa jabatan karyawan perlu dipupuk dan dihargai. Namun, Neural Network menekankan pentingnya lama menjabat dan hari hiring, menunjukkan bahwa memelihara pertumbuhan karyawan dan mengoptimalkan proses onboarding sangat penting untuk retensi. Menggabungkan wawasan dari kedua model dapat menyebabkan pendekatan yang lebih komprehensif untuk retensi karyawan. Dengan mengatasi fitur-fitur utama ini, perusahaan dapat secara proaktif mengurangi omset, meningkatkan kepuasan karyawan, dan akhirnya meningkatkan kinerja bisnis mereka.
