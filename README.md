@@ -78,7 +78,7 @@ Pada tahapan ini, akan dibangun model yang dapat memprediksi indikasi penyebab r
 |     Gradient Boosting          |     0.95        |     0.9          |     0.95      |     0.92        |     0.95    |
 |     Decision Tree              |     0.93        |     0.86         |     0.95      |     0.9         |     0.93    |
 |     Random Forest              |     0.91        |     1.0          |     0.74      |     0.85        |     0.87    |
-|     Linear Regression          |     0.67        |     0.5          |     0.11      |     0.17        |     0.53    |
+|     Linear Regression          |     0.67        |     0.5          |     0.11      |     0.17        |     0.53    |<br>
 Terlihat bahwa model Gradient Boosting menunjukkan hasil yang baik, dengan akurasi 94,83% dengan keakurasian 94,80%. Kemampuan prediksi dan keakuratannya dalam mengidentifikasi potensi pengunduran diri menjadikannya model yang direkomendasikan untuk prediksi retensi karyawan. Lalu dilakukan analisis Cross-Validation dan Hyperparameter Tuning, dimana model mengalami fine-tuning, menampilkan metrik kinerja yang cukup baik dengan:
 - Rerata Precision: 0,97
 - Rerata Recall: 0,96
