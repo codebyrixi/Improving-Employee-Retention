@@ -53,7 +53,7 @@ Pada proses ini dilakukan pemrosesan data sekaligus pembersihan data, yang terdi
 
 ## Bagian 2: Laporan Tahunan Perubahan Jumlah Karyawan
 Grafik dibawah menunjukkan tren perubahan jumlah karyawan dari tahun ke tahunnya.
-![image](https://github.com/user-attachments/assets/37d7d3c2-c96b-437f-b2b1-5ec9ea6223f7)
+![image](https://github.com/user-attachments/assets/37d7d3c2-c96b-437f-b2b1-5ec9ea6223f7)<br>
 Berdasarkan grafik diatas, dapat dilihat bahwa:
 1. Selama 2006-2013, jumlah karyawan yang masuk relatif rendah, dan ada peningkatan bertahap pada karyawan yang keluar.
 2. Pada 2013, sejumlah besar karyawan mengundurkan diri, mengakibatkan penurunan tajam pada total karyawan yang tersisa. Tren ini berlanjut pada 2014 dan 2015. Peningkatan karyawan yang keluar mungkin disebabkan oleh berbagai faktor seperti ketidakpuasan pekerjaan, kesempatan kerja di tempat lain, dan lain sebagainya.
@@ -61,5 +61,11 @@ Berdasarkan grafik diatas, dapat dilihat bahwa:
 4. Pada 2018, jumlah karyawan yang masuk sangat rendah, sedangkan jumlah karyawan yang keluar secara signifikan lebih tinggi. Hal ini menyebabkan penurunan drastis pada total karyawan yang tersisa. Tren peningkatan pengunduran diri mungkin disebabkan oleh masalah internal atau faktor eksternal yang mempengaruhi stabilitas pekerjaan.
 
 ## Bagian 3: Analisis Alasan Mengundurkan Diri Untuk Strategi Manajemen Attrusi Karyawan
-![image](https://github.com/user-attachments/assets/1f9f8348-5659-46e5-8307-9fd758f6c5f8)
+![image](https://github.com/user-attachments/assets/1f9f8348-5659-46e5-8307-9fd758f6c5f8)<br>
 Terlihat bahwa Software Engineer adalah divisi yang paling dominan pada perusahaan dengan total 73,71% dari persentase dari seluruh divisi menunjukkan betapa pentingnya peran Software Engineer di perusahaan. Kemudian, divisi yang dominan diikuti oleh UI & UX dengan 7,73%, sementara divisi sisanya di bawah 6% menunjukkan beberapa asumsi bahwa ini mungkin ada beberapa hierarki struktural peran penting bagi perusahaan seperti Software Engineer.
+![image](https://github.com/user-attachments/assets/b5dfa82a-5f38-4212-9a17-d4a1e9c5fade)<br>
+Dapat terlihat bahwa karyawan yang resign paling banyak merupakan _fresh graduate_, diikuti dengan _mid level_ dan _senior level_ .
+![image](https://github.com/user-attachments/assets/995d231e-2aa7-4924-a2ab-9a65e5f7ff83)<br>
+Pada grafik ini, dapat terlihat bahwa pegawai yang _resign_ ternyata memiliki performa yang sangat bagus. Hal ini dapat disebabkan karena pegawai dituntut untuk mendapatkan kesempatan yang lebih baik atau tujuan pengembangan karier pribadi.
+![image](https://github.com/user-attachments/assets/506468e2-ba8c-4803-865f-1dc48b4f00d0)<br>
+Berdasarkan alasan resign, banyak pegawai yang mengajukan resign karena jam kerja, keinginan untuk berganti karir, serta kejelasan karir yang belum jelas.
