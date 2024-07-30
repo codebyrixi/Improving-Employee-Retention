@@ -5,7 +5,7 @@ Project ini merupakan project yang bertujuan untuk meningkatkan retensi karyawan
 - Data Preprocessing
 - Laporan Tahunan Perubahan Jumlah Karyawan
 - Analisis Alasan Mengundurkan Diri Untuk Strategi Manajemen Attrusi Karyawan
--
+- Membangun Prediksi Perilaku Pengunduran Diri Otomatis Menggunakan _Machine Learning_
 -
 
 ## Bagian 0: Pendahuluan
@@ -69,3 +69,17 @@ Dapat terlihat bahwa karyawan yang resign paling banyak merupakan _fresh graduat
 Pada grafik ini, dapat terlihat bahwa pegawai yang _resign_ ternyata memiliki performa yang sangat bagus. Hal ini dapat disebabkan karena pegawai dituntut untuk mendapatkan kesempatan yang lebih baik atau tujuan pengembangan karier pribadi.
 ![image](https://github.com/user-attachments/assets/506468e2-ba8c-4803-865f-1dc48b4f00d0)<br>
 Berdasarkan alasan resign, banyak pegawai yang mengajukan resign karena jam kerja, keinginan untuk berganti karir, serta kejelasan karir yang belum jelas.
+
+## Bagian 4: Membangun Prediksi Perilaku Pengunduran Diri Otomatis Menggunakan _Machine Learning_
+Pada tahapan ini, akan dibangun model yang dapat memprediksi indikasi penyebab resign dengan menggunakan model machine learning. Untuk pelatihan dan evaluasi model yang kuat, 287 data karyawan dibagi menjadi data training (79,79%) dan data testing (20,21%). Dengan memanfaatkan berbagai model machine learning, didapatkan insight sebagai berikut.
+|     Metode Machine Learning    |     Accuracy    |     Precision    |     Recall    |     F1-score    |     ROC     |
+|--------------------------------|-----------------|------------------|---------------|-----------------|-------------|
+|     Support Vector Machine     |     0.67        |     0.0          |     0.0       |     0.0         |     0.5     |
+|     Gradient Boosting          |     0.95        |     0.9          |     0.95      |     0.92        |     0.95    |
+|     Decision Tree              |     0.93        |     0.86         |     0.95      |     0.9         |     0.93    |
+|     Random Forest              |     0.91        |     1.0          |     0.74      |     0.85        |     0.87    |
+|     Linear Regression          |     0.67        |     0.5          |     0.11      |     0.17        |     0.53    |
+Terlihat bahwa model Gradient Boosting menunjukkan hasil yang baik, dengan akurasi 94,83% dengan keakurasian 94,80%. Kemampuan prediksi dan keakuratannya dalam mengidentifikasi potensi pengunduran diri menjadikannya model yang direkomendasikan untuk prediksi retensi karyawan. Lalu dilakukan analisis Cross-Validation dan Hyperparameter Tuning, dimana model mengalami fine-tuning, menampilkan metrik kinerja yang cukup baik dengan:
+- Rerata Precision: 0,97
+- Rerata Recall: 0,96
+- Rerata ROC-AUC: 0.97
